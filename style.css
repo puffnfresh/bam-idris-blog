@@ -1,0 +1,181 @@
+body {
+    font-family: sans-serif;
+    background: #FFF;
+    color: #111;
+    margin: 0;
+    padding: 0;
+}
+
+#container {
+    width: 45em;
+    margin: 0 auto;
+}
+
+@media only screen {
+    #container {
+	max-width: 45em;
+	width: auto;
+    }
+}
+
+.header_container {
+    height: 165px;
+    background: #000;
+    margin-top: 1em;
+    margin-bottom: 3em;
+}
+
+.header {
+    display: block;
+    height: 165px;
+    -webkit-transition: background-position 300ms;
+    -moz-transition: background-position 300ms;
+    -o-transition: background-position 300ms;
+    transition: background-position 300ms;
+}
+
+.header:hover {
+    background-position: 50px top;
+}
+
+.header .title {
+    display: none;
+}
+
+a {
+    color: #048;
+}
+
+a:visited {
+    color: #012;
+}
+
+a:hover {
+    color: #27c;
+    text-decoration: none;
+}
+
+.title {
+    margin-bottom: 0;
+}
+
+.details {
+    font-size: 0.9em;
+    color: #999;
+}
+
+.article {
+    font-size: 1.1em;
+    padding-bottom: 2em;
+    line-height: 1.5em;
+}
+
+code {
+    background: #EEE;
+    color: #111;
+}
+
+pre, code {
+    line-height: 1.25;
+    overflow: auto;
+}
+
+pre {
+    padding: 0.5em;
+    background: #111;
+    color: #EEE;
+}
+
+pre code {
+    background: #111;
+    color: #EEE;
+}
+
+.footer {
+    margin-top: 3em;
+    background: #111 none no-repeat scroll 0.5em bottom;
+    color: #EEE;
+    /* float: left; */
+    font-size: 1.1em;
+}
+
+.footer a {
+    color: #FB5;
+}
+
+.footer h3 {
+    color: #FA1;
+    margin: 0;
+}
+
+.footer .section {
+    /* width: 50%; */
+    /* float: left; */
+    background: #111;
+}
+
+.footer .inner {
+    padding: 1em;
+}
+
+.footer .first .inner {
+    padding-right: 0;
+}
+
+.footer .last .inner {
+    padding-left: 0;
+}
+
+.footer #tweet-box .entry {
+    padding-top: 1em;
+}
+
+#disqus_thread {
+    padding-top: 2em;
+}
+
+@media only screen and (max-width: 57em) {
+    body {
+	background: #FFF;
+    }
+
+    .header_container {
+	margin: 0 1em;
+	background-position: center center;
+    }
+
+    .header {
+	display: none;
+    }
+
+    #content {
+	background: #FFF;
+	margin: 0 1em;
+    }
+
+    img {
+	max-width: 100%;
+    }
+}
+
+@media only screen and (max-width: 520px) {
+    .header_container {
+	background-image: none;
+    }
+
+    .header {
+	display: block;
+    }
+
+    .footer .section {
+	width: auto;
+    }
+
+    .article, .footer {
+	font-size: 1.2em;
+    }
+
+    pre {
+	white-space: pre-wrap;
+    }
+}
