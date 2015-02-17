@@ -1,1 +1,1 @@
-This is an example blog post.
+This is an *example* blog post.
