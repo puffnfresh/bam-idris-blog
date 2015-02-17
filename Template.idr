@@ -120,7 +120,7 @@ renderFeedArticle (MkArticle s t a d c) =
   "  <author>\n" ++
   "    <name>" ++ a ++ "</name>\n" ++
   "  </author>\n" ++
-  "  <content type=\"html\"><![CDATA[" ++ c ++ "]]></content>\n" ++
+  "  <content type=\"html\"><![CDATA[" ++ writeHtml' (readMarkdown' c) ++ "]]></content>\n" ++
   "</entry>"
 
 renderFeedIndex : List Article -> String
